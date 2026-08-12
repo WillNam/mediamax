@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI 起号教练"
+  short_description: "定位、四榜对标、30 天实验计划与复盘总控"
+  default_prompt: "使用 $self-media-launch-coach 帮我做一次自媒体起号诊断：定位、四榜、对标拆解和首周可拍计划。"

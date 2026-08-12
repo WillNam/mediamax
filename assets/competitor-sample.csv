@@ -1,0 +1,2 @@
+platform,handle,url,followers,video_count,content_id,published_at,title,duration_sec,views,likes,comments,shares,saves,content_type,hook_type,evidence_type,notes
+抖音,示例号,https://example.com,12000,80,v001,2026-08-01,示例标题,58,15000,800,90,40,120,口播,冲突,录屏,样本
