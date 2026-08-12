@@ -1,113 +1,136 @@
-# MediaMax — 自媒体 / 媒介 Agent Skill 套件
+# MediaMax
 
-**媒体智能仓库**：把博主、运营、编导、商务、品牌媒介的高频工作，拆成可安装的 Agent Skill。
+<p align="center">
+  <img src="docs/images/brand-phone-hero.png" alt="MediaMax" width="920" />
+</p>
 
-仓库地址：https://github.com/WillNam/mediamax
+<p align="center">
+  <strong>媒体智能。</strong><br />
+  一个人的内容团队，装进一组 Skill。
+</p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+<p align="center">
+  <a href="https://github.com/WillNam/mediamax"><img src="https://img.shields.io/badge/GitHub-WillNam%2Fmediamax-111111?style=flat-square" alt="repo" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-555555?style=flat-square" alt="license" /></a>
+</p>
 
 ---
 
-## 一句话
+<br />
 
-> 一个人 + 一组 Skill = 策略 / 内容 / 运营 / 变现 / 媒介协作台
+## 它很安静。  
+## 但很完整。
 
-## 快速安装
+起号。选题。封面。评论。商单。复盘。
 
-### 起号教练（仓库根目录）
+MediaMax 不替你保证爆款。  
+它把「凭感觉发内容」，变成一套能重复执行的系统。
+
+<p align="center">
+  <img src="docs/images/hero-light.jpg" alt="创作现场" width="920" />
+</p>
+
+<br />
+
+## 一个人。  
+## 四个部门。
+
+|  |  |
+|---|---|
+| **策略** | 定位、栏目、30 天实验 |
+| **研究** | 四榜对标、可迁移机制 |
+| **生产** | 钩子、脚本、封面、切片 |
+| **经营** | 评论、私域、商单、合规 |
+
+不是多雇四个人。  
+是让 AI 按岗位工作。
+
+<p align="center">
+  <img src="docs/images/desk-mac.jpg" alt="工作台" width="920" />
+</p>
+
+<br />
+
+## 为真实工作设计。  
+## 不是功能堆砌。
+
+### 博主
+主页转化 · 封面点击 · 搜索选题 · 系列更新
+
+### 运营
+评论话术 · 矩阵分工 · 公域到私域
+
+### 编导 / 制作
+口播分镜 · 长内容切片 · 直播脚本
+
+### 商务 / 媒介
+商单 Brief · 刊例资料 · 投放匹配 · 合规审校
+
+<p align="center">
+  <img src="docs/images/phone-content.jpg" alt="手机内容" width="920" />
+</p>
+
+<br />
+
+## 开始，只需要一句。
 
 ```bash
-# Claude Code
 git clone https://github.com/WillNam/mediamax.git ~/.claude/skills/ai-launch-coach
-
-# Cursor
-git clone https://github.com/WillNam/mediamax.git ~/.cursor/skills/ai-launch-coach
 ```
 
-对 AI 说：
+然后对 AI 说：
 
 > 使用 ai-launch-coach 帮我做一次自媒体起号诊断。
 
-### 安装单个子 Skill
+安装单个能力：
 
 ```bash
-# 例：封面导演
 mkdir -p ~/.claude/skills/self-media-cover-director
-cp -R skills/self-media-cover-director/SKILL.md ~/.claude/skills/self-media-cover-director/
+cp skills/self-media-cover-director/SKILL.md ~/.claude/skills/self-media-cover-director/
 ```
 
-或把整个 `skills/` 目录同步到你的 skills 根目录。
+<br />
 
----
+## 选一个组合。  
+## 够用就好。
 
-## Skill 地图
+**起号包** — 新人从 0 到第 7 条  
+launch-coach · profile · cover · search-seo
 
-### 根目录（已可用）
+**日更包** — 稳定产出的人  
+cover · comment-ops · series · clip
 
-| Skill | 作用 |
-|---|---|
-| `ai-launch-coach`（根 `SKILL.md`） | 起号总控：定位、四榜、30 天实验、复盘 |
+**变现包** — 开始接洽品牌  
+brand-deal · media-kit · private-domain · live
 
-### 新增子 Skill（`skills/`）
+**品牌媒介包** — 甲方与代理  
+brand-media-brief · compliance · crisis-desk
 
-| Skill | 岗位 | 作用 |
-|---|---|---|
-| `self-media-profile-optimizer` | 博主 | 主页简介 / 置顶转化 |
-| `self-media-cover-director` | 编导 | 封面与标题点击率 |
-| `self-media-comment-ops` | 运营 | 评论区策略与话术 |
-| `self-media-search-seo` | 增长 | 搜索选题与长尾词 |
-| `self-media-series-factory` | 主编 | 系列栏目与批量大纲 |
-| `self-media-clip-factory` | 制作 | 长内容拆短视频 |
-| `self-media-live-script` | 直播 | 直播分场脚本 |
-| `self-media-brand-deal` | 商务 | 商单 Brief 与报价 |
-| `self-media-media-kit` | 商务 | 媒介资料包 / 刊例 |
-| `self-media-private-domain` | 私域 | 公域→私域路径 |
-| `self-media-matrix-ops` | 团队 | 矩阵号分工排期 |
-| `brand-media-brief` | 品牌媒介 | 投放 Brief 与达人匹配 |
-| `self-media-compliance` | 合规 | 发布前审校 |
-| `self-media-crisis-desk` | 公关 | 舆情分级应对 |
+<p align="center">
+  <img src="docs/images/analytics-desk.jpg" alt="数据复盘" width="920" />
+</p>
 
-完整设计说明见：[docs/skill-portfolio.md](docs/skill-portfolio.md)
+<br />
 
----
+## 我们坚持的边界。
 
-## 推荐组合包
+不登录你的账号去爬竞品。  
+不绕过平台规则。  
+不承诺播放量。  
+不把公开数据写成收入。
 
-| 包 | 适合 | 技能 |
-|---|---|---|
-| 起号包 | 新人 | launch-coach + profile + cover + search-seo |
-| 日更包 | 个人博主 | cover + comment-ops + series-factory + clip-factory |
-| 变现包 | 接商单 | brand-deal + media-kit + private-domain + live-script |
-| 品牌媒介包 | 甲方/代理 | brand-media-brief + compliance + crisis-desk |
+诚实，才能长期使用。
 
----
+<br />
 
-## 项目结构
+## 深入了解
 
-```
-mediamax/
-├── SKILL.md                 # 起号教练（主 Skill）
-├── README.md
-├── LICENSE
-├── docs/skill-portfolio.md  # 产品矩阵设计
-├── assets/ references/ scripts/ examples/ agents/
-└── skills/                  # 按岗位拆分的子 Skill
-    ├── self-media-cover-director/
-    ├── self-media-brand-deal/
-    └── ...
-```
+- [Skill 产品矩阵](docs/skill-portfolio.md)
+- [小红书风格介绍文案](docs/xhs-intro.md)
+- [苹果风介绍页](docs/intro.html)
 
----
+<br />
 
-## 边界
-
-- 不登录平台账号做自动化采集或群发
-- 不绕过验证码、付费墙、风控
-- 不承诺爆款或保证成交
-- 商单与广告内容必须合规披露
-
----
-
-## 许可
-
-[MIT License](LICENSE)
+<p align="center">
+  <sub>MIT License · WillNam / MediaMax</sub>
+</p>
