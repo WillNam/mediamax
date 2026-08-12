@@ -35,10 +35,10 @@
 
 ```bash
 # 克隆到 skills 目录
-git clone https://github.com/YOUR_USERNAME/ai-launch-coach.git ~/.claude/skills/ai-launch-coach
+git clone https://github.com/WillNam/mediamax.git ~/.claude/skills/ai-launch-coach
 
 # 或 Cursor
-git clone https://github.com/YOUR_USERNAME/ai-launch-coach.git ~/.cursor/skills/ai-launch-coach
+git clone https://github.com/WillNam/mediamax.git ~/.cursor/skills/ai-launch-coach
 ```
 
 **OpenClaw：**
