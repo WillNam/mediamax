@@ -1,147 +1,113 @@
-# 🚀 AI 起号教练 — ai-launch-coach
+# MediaMax — 自媒体 / 媒介 Agent Skill 套件
 
-**一个人 + 一个 AI Skill = 4 个自媒体运营部门**
+**媒体智能仓库**：把博主、运营、编导、商务、品牌媒介的高频工作，拆成可安装的 Agent Skill。
 
-帮助没有运营团队的新人，用一次 AI 诊断完成账号定位、同行研究、对标拆解、30 天内容规划和数据复盘。
+仓库地址：https://github.com/WillNam/mediamax
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Skill Standard](https://img.shields.io/badge/Agent%20Skill-v1-blue)](https://docs.anthropic.com/en/docs/agents/agent-skills)
 
 ---
 
-## 它能做什么
+## 一句话
 
-| 部门 | 能力 | 交付物 |
-|------|------|--------|
-| 🎯 账号策略部 | 定位、人设、受众、商业目标、栏目规划 | 一句话定位 + 不做清单 + 栏目配比 |
-| 🔍 同行研究部 | 公开样本采集、四维排行榜、对标拆解 | 四张榜 + 3–5 个对标拆解报告 |
-| 🎬 内容生产部 | 选题、前三秒钩子、口播稿、分镜、发布包 | 7/30 天可拍选题日历 |
-| 📊 数据复盘部 | 基线建立、归因分析、实验设计 | 指标台账 + 唯一实验 + 下周动作 |
+> 一个人 + 一组 Skill = 策略 / 内容 / 运营 / 变现 / 媒介协作台
 
-## 独创四榜体系
+## 快速安装
 
-不只按粉丝排序。每次对标研究输出四张排行榜：
-
-1. **注意力天花板榜** — 赛道能做到多大
-2. **低粉爆款效率榜** — 谁在低粉时单条跑赢（新人优先学）
-3. **内容可复制榜** — 哪种格式按你的产能能连续做
-4. **商业匹配榜** — 谁的受众和变现路径最接近你
-
-## 快速开始
-
-### 安装
-
-**Claude Code / Cursor（推荐）：**
+### 起号教练（仓库根目录）
 
 ```bash
-# 克隆到 skills 目录
+# Claude Code
 git clone https://github.com/WillNam/mediamax.git ~/.claude/skills/ai-launch-coach
 
-# 或 Cursor
+# Cursor
 git clone https://github.com/WillNam/mediamax.git ~/.cursor/skills/ai-launch-coach
 ```
 
-**OpenClaw：**
-
-通过 ClawHub 搜索 `ai-launch-coach` 一键安装。
-
-**手动安装：**
-
-将 `SKILL.md` 和 `assets/`、`references/`、`scripts/` 目录复制到你的 Agent Skill 目录。
-
-### 使用
-
 对 AI 说：
 
-> 使用 ai-launch-coach 帮我做一次自媒体起号诊断。我的赛道是 ___，主平台是 ___。
+> 使用 ai-launch-coach 帮我做一次自媒体起号诊断。
 
-或者先填写问诊表：
-
-> 打开 assets/intake-form.md 帮我填写起号问诊表。
-
-### 辅助脚本
+### 安装单个子 Skill
 
 ```bash
-# 标准化原始样本数据
-python scripts/normalize_metrics.py raw_samples.csv > normalized.csv
-
-# 生成四榜排序（效率侧）
-python scripts/rank_competitors.py normalized.csv
+# 例：封面导演
+mkdir -p ~/.claude/skills/self-media-cover-director
+cp -R skills/self-media-cover-director/SKILL.md ~/.claude/skills/self-media-cover-director/
 ```
+
+或把整个 `skills/` 目录同步到你的 skills 根目录。
+
+---
+
+## Skill 地图
+
+### 根目录（已可用）
+
+| Skill | 作用 |
+|---|---|
+| `ai-launch-coach`（根 `SKILL.md`） | 起号总控：定位、四榜、30 天实验、复盘 |
+
+### 新增子 Skill（`skills/`）
+
+| Skill | 岗位 | 作用 |
+|---|---|---|
+| `self-media-profile-optimizer` | 博主 | 主页简介 / 置顶转化 |
+| `self-media-cover-director` | 编导 | 封面与标题点击率 |
+| `self-media-comment-ops` | 运营 | 评论区策略与话术 |
+| `self-media-search-seo` | 增长 | 搜索选题与长尾词 |
+| `self-media-series-factory` | 主编 | 系列栏目与批量大纲 |
+| `self-media-clip-factory` | 制作 | 长内容拆短视频 |
+| `self-media-live-script` | 直播 | 直播分场脚本 |
+| `self-media-brand-deal` | 商务 | 商单 Brief 与报价 |
+| `self-media-media-kit` | 商务 | 媒介资料包 / 刊例 |
+| `self-media-private-domain` | 私域 | 公域→私域路径 |
+| `self-media-matrix-ops` | 团队 | 矩阵号分工排期 |
+| `brand-media-brief` | 品牌媒介 | 投放 Brief 与达人匹配 |
+| `self-media-compliance` | 合规 | 发布前审校 |
+| `self-media-crisis-desk` | 公关 | 舆情分级应对 |
+
+完整设计说明见：[docs/skill-portfolio.md](docs/skill-portfolio.md)
+
+---
+
+## 推荐组合包
+
+| 包 | 适合 | 技能 |
+|---|---|---|
+| 起号包 | 新人 | launch-coach + profile + cover + search-seo |
+| 日更包 | 个人博主 | cover + comment-ops + series-factory + clip-factory |
+| 变现包 | 接商单 | brand-deal + media-kit + private-domain + live-script |
+| 品牌媒介包 | 甲方/代理 | brand-media-brief + compliance + crisis-desk |
+
+---
 
 ## 项目结构
 
 ```
-ai-launch-coach/
-├── SKILL.md                              # Skill 主文件（Agent 读取入口）
-├── README.md                             # 本文件
-├── LICENSE                               # MIT License
-├── agents/
-│   └── openai.yaml                       # OpenAI Agent 适配配置
-├── assets/                               # 模板与数据文件
-│   ├── intake-form.md                    # 起号问诊表
-│   ├── account-profile-template.md       # 账号档案模板
-│   ├── competitor-teardown-template.md   # 对标拆解模板
-│   ├── 30-day-calendar-template.md       # 30 天日历模板
-│   ├── metrics-ledger.csv                # 指标台账模板
-│   └── competitor-sample.csv             # 竞品样本示例
-├── references/                           # 参考文档
-│   ├── metric-schema.md                  # 指标字段定义
-│   ├── competitor-ranking.md             # 四榜规则
-│   ├── hook-analysis.md                  # 前三秒钩子公式
-│   └── platform-data-boundaries.md       # 平台数据边界
-├── scripts/                              # 辅助 Python 脚本
-│   ├── normalize_metrics.py              # 样本标准化
-│   └── rank_competitors.py               # 四榜排序
-└── examples/                             # 使用示例
-    └── demo-diagnosis.md                 # 诊断流程演示
+mediamax/
+├── SKILL.md                 # 起号教练（主 Skill）
+├── README.md
+├── LICENSE
+├── docs/skill-portfolio.md  # 产品矩阵设计
+├── assets/ references/ scripts/ examples/ agents/
+└── skills/                  # 按岗位拆分的子 Skill
+    ├── self-media-cover-director/
+    ├── self-media-brand-deal/
+    └── ...
 ```
 
-## 支持的平台
+---
 
-| 平台 | 定位 | 对标 | 选题 | 脚本 | 复盘 |
-|------|:----:|:----:|:----:|:----:|:----:|
-| 抖音 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 视频号 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 小红书 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| B 站 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| YouTube | ✅ | ✅ | ✅ | ✅ | ✅ |
+## 边界
 
-## 可选子模块
+- 不登录平台账号做自动化采集或群发
+- 不绕过验证码、付费墙、风控
+- 不承诺爆款或保证成交
+- 商单与广告内容必须合规披露
 
-本 Skill 独立可用。搭配以下子模块可扩展更多能力：
-
-| 子模块 | 功能 |
-|--------|------|
-| `self-media-content-strategy` | 深度策略、选题池、内容日历 |
-| `self-media-trend-radar` | 热点追踪、竞品研究 |
-| `self-media-short-video` | 口播稿、分镜、字幕、拍摄方案 |
-| `self-media-content-analytics` | 单篇/周/月度数据复盘 |
-| `self-media-platform-copywriting` | 多平台原生改写 |
-| `self-media-content-delivery` | 版本管理、发布包、归档 |
-| `self-media-content-brief` | 创作简报与需求澄清 |
-| `self-media-content-workflow` | 完整创作工作流总控 |
-
-## 不做什么
-
-- 不承诺爆款或保证涨粉。
-- 不自动登录平台账号采集数据。
-- 不绕过任何平台验证码或付费墙。
-- 不复制竞品标题、脚本或独特表达，只迁移可学机制。
-- 不把公开播放量写成收入。
-
-## 贡献
-
-欢迎提交 Issue 和 PR。请确保：
-
-1. 模板改动不破坏现有字段。
-2. 脚本改动附带测试用例。
-3. 不引入需要平台登录态的采集能力。
+---
 
 ## 许可
 
-[MIT License](LICENSE) — 可自由使用、修改和分发。
-
-## 致谢
-
-基于 [Anthropic Agent Skill](https://docs.anthropic.com/en/docs/agents/agent-skills) 标准构建，适用于 Claude Code、Cursor、OpenClaw 等支持 Agent Skill 的 AI 编程环境。
+[MIT License](LICENSE)
