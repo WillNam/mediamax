@@ -83,11 +83,26 @@
 | 优先级 | Skill | 原因 |
 |---|---|---|
 | P0 | profile-optimizer, cover-director, comment-ops, search-seo | 起号后立刻高频用 |
-| P1 | series-factory, clip-factory, brand-deal, media-kit | 稳定更新与变现 |
+| P0+ | viral-breakdown, account-doctor, benchmark-finder, headline-lab | 平台最热能力的优化版 |
+| P1 | series-factory, clip-factory, brand-deal, media-kit, voice-dna, repurpose, publish-checklist | 稳定更新与变现 |
 | P2 | live-script, private-domain, matrix-ops | 团队 / 直播阶段 |
 | P3 | brand-media-brief, compliance, crisis-desk | 品牌与风险管理 |
 
-## 5. 与 MediaCrawler 类工具的边界
+## 5. 2026-08 市场热门能力补齐
+
+详见 [market-skill-gap.md](market-skill-gap.md)。
+
+新增优化版：
+
+- `self-media-viral-breakdown`
+- `self-media-account-doctor`
+- `self-media-benchmark-finder`
+- `self-media-headline-lab`
+- `self-media-voice-dna`
+- `self-media-repurpose`
+- `self-media-publish-checklist`
+
+## 6. 与 MediaCrawler 类工具的边界
 
 本套件**不做**登录态自动化采集、规模化爬虫、绕过风控。  
 同行研究仅使用：用户提供链接 / 截图 / 导出，或公开只读信息。

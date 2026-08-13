@@ -137,12 +137,18 @@ python scripts/rank_competitors.py normalized.csv
 | 只要竞品/热点 | `self-media-trend-radar` |
 | 写单条口播分镜 | `self-media-short-video` |
 | 复盘后台数据 | `self-media-content-analytics` |
-| 多平台改写 | `self-media-platform-copywriting` |
+| 多平台改写 | `self-media-platform-copywriting` / `self-media-repurpose` |
 | 归档发布包 | `self-media-content-delivery` |
 | 创作简报 | `self-media-content-brief` |
 | 完整工作流 | `self-media-content-workflow` |
+| 拆单条爆款 | `self-media-viral-breakdown` |
+| 老号为什么卡住 | `self-media-account-doctor` |
+| 找真对标 | `self-media-benchmark-finder` |
+| 标题打磨 | `self-media-headline-lab` |
+| 去 AI 味 / 定人设 | `self-media-voice-dna` |
+| 发布前检查 | `self-media-publish-checklist` |
 
-子模块可从本仓库 Organization 或独立安装。本 Skill 在子模块不存在时，按 SKILL.md 中同名阶段执行最小流程。
+子模块位于本仓库 `skills/`。未安装时，按对应最小流程执行，不虚构能力。
 
 ## 红线
 
