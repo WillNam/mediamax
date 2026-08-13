@@ -103,12 +103,27 @@ cover · comment-ops · series · clip
 **变现包** — 开始接洽品牌  
 brand-deal · media-kit · private-domain · live
 
-**品牌媒介包** — 甲方与代理  
-brand-media-brief · compliance · crisis-desk
+**增长诊断包** — 老号卡住 / 要对标学习  
+account-doctor · viral-breakdown · benchmark-finder · headline-lab
+
+**表达资产包** — 去 AI 味、一鱼多吃、发前不扑街  
+voice-dna · repurpose · publish-checklist
 
 <p align="center">
   <img src="docs/images/analytics-desk.jpg" alt="数据复盘" width="920" />
 </p>
+
+<br />
+
+## 我们从平台热门里学到了什么。
+
+对照 OpenClaw / Creator Studio / Account Doctor / 灵造等热门能力后，补齐了 7 个优化版：
+
+爆款深拆 · 账号体检 · 真对标筛选 · 标题实验室 · Voice DNA · 一鱼多吃 · 发布前清单
+
+不照搬自动发布与登录态爬虫。学机制，守边界。
+
+详见 [docs/market-skill-gap.md](docs/market-skill-gap.md)。
 
 <br />
 
